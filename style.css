@@ -1,0 +1,76 @@
+@import 'https://fonts.googleapis.com/css?family=Lato|Oswald';
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #F5FFF0;
+  color: #A833FF;
+  font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.block {
+  position: relative;
+  padding: 2rem;
+}
+
+.block + .block {
+  margin-top: 2rem;
+}
+
+.author__block {
+  border: 2px solid #12784D;
+  border-radius: 3px;
+  margin-top: calc(64px + 2rem);
+  background-color: #F0F0F0;
+}
+
+.author__avatar {
+  position: absolute;
+  display: block;
+  width: 128px;
+  height: 128px;
+  top: 0;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #12784D;
+  box-shadow: 0 5px 15px 3px rgba(168, 51, 255, 0.333);
+  z-index: 3;
+}
+.author__avatar img {
+  position: absolute;
+  display: block;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.author__header {
+  text-align: center;
+  max-width: 61.8%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #12784D;
+  padding-bottom: 0.75rem;
+}
+
+.author__avatar + .author__header {
+  margin-top: 64px;
+}
